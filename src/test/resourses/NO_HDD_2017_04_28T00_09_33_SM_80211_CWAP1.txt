@@ -1,0 +1,54 @@
+**** SM_80211_CWAP Report File for Tail , 2017-04-28 00:09:33, 0.00, 0.00, 20000, 65617, NA, NA, NA, ABOVE_SERVICE_ALTITUDE, ATG_RevB  ***
+**** CWAP 1 ****
+**** ABS Software 6.4.0****
+CwapType, 1
+Dot11Radio0 is up, line protocol is up
+Hardware is 802.11N 2.4GHz Radio, address is 5ca4.8ad6.a390 (bia 5ca4.8ad6.a390)
+MTU 1500 bytes, BW 54000 Kbit/sec, DLY 1000 usec,
+reliability 255/255, txload 1/255, rxload 1/255
+Encapsulation 802.1Q Virtual LAN, Vlan ID  1., loopback not set
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:50:10, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 0/10066/0/0 (size/max/drops/flushes); Total output drops: 352
+Queueing strategy: fifo
+Output queue: 0/30 (size/max)
+5 minute input rate 54000 bits/sec, 40 packets/sec
+5 minute output rate 0 bits/sec, 0 packets/sec
+321071 packets input, 54305648 bytes, 0 no buffer
+Received 1076 broadcasts, 0 runts, 0 giants, 0 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+0 input packets with dribble condition detected
+1501 packets output, 208682 bytes, 0 underruns
+24 output errors, 0 collisions, 10 interface resets
+0 unknown protocol drops
+0 babbles, 0 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+Dot11Radio1 is up, line protocol is up
+Hardware is 802.11N 5GHz Radio, address is 5ca4.8ad8.9070 (bia 5ca4.8ad8.9070)
+MTU 1500 bytes, BW 54000 Kbit/sec, DLY 1000 usec,
+reliability 255/255, txload 1/255, rxload 1/255
+Encapsulation 802.1Q Virtual LAN, Vlan ID  1., loopback not set
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:51:00, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 0/10066/0/0 (size/max/drops/flushes); Total output drops: 355
+Queueing strategy: fifo
+Output queue: 0/30 (size/max)
+5 minute input rate 0 bits/sec, 0 packets/sec
+5 minute output rate 0 bits/sec, 0 packets/sec
+6143 packets input, 1373215 bytes, 0 no buffer
+Received 424 broadcasts, 0 runts, 0 giants, 0 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+0 input packets with dribble condition detected
+646 packets output, 79972 bytes, 0 underruns
+0 output errors, 0 collisions, 10 interface resets
+0 unknown protocol drops
+0 babbles, 0 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+^
+% Invalid input detected at '^' marker.
+
+***** END OF FILE ***

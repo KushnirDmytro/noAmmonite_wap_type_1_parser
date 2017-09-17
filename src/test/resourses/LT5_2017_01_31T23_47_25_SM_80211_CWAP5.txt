@@ -1,0 +1,7 @@
+**** SM_80211_CWAP Report File for Tail LT5, 2017-01-31 23:47:24, 0.00, 0.00, 20000, 65617, NA, NA, NA, ABOVE_SERVICE_ALTITUDE, ATG_RevA  ***
+**** CWAP 5 ****
+**** ABS Software 6.6.0****
+CwapType, 1
+
+
+***** END OF FILE ***

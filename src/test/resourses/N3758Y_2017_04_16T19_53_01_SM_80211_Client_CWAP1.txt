@@ -1,0 +1,41 @@
+**** SM_80211_Client_CWAP Report File for Tail N3758Y, 2017-04-16 19:53:01, 29.99, -90.28, -65, -216, NA, NA, NA, TAXI, 2KU ***
+**** CWAP 1 ****
+**** ABS Software 10.4.0****
+**** ACPU Part Number P25000.001.017****
+CwapType, 1
+Dot11Radio1: -- Client Traffic --
+Clients:
+15-5cf5.da43.6da5 pak in 623 bytes in 63192 pak out 167 bytes out 54966
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 0 data retries 0 rts retries 0
+signal strength 56 signal quality 39
+1-3412.9838.4a6c pak in 358 bytes in 26447 pak out 37 bytes out 7047
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3 data retries 3 rts retries 0
+signal strength 51 signal quality 45
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+17-24f0.9452.2038 pak in 128 bytes in 12589 pak out 36 bytes out 9892
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 5 data retries 5 rts retries 0
+signal strength 53 signal quality 45
+16-cc29.f539.e076 pak in 70 bytes in 3544 pak out 24 bytes out 5405
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3 data retries 3 rts retries 0
+signal strength 60 signal quality 37
+3-985f.d359.cdbf pak in 15641 bytes in 689947 pak out 2843 bytes out 567878
+dup 22 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1674 data retries 1598 rts retries 76
+signal strength 70 signal quality 24
+2-90b6.86ac.85bf pak in 5287 bytes in 653945 pak out 2607 bytes out 1174926
+dup 3 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1724 data retries 1508 rts retries 216
+signal strength 52 signal quality 42
+
+
+IP Address : 172.19.131.96; MAC Address : 24:F0:94:52:20:38; User-Agent : Flixster/1105 CFNetwork/811.4.18 Darwin/16.5.0;
+IP Address : 172.19.131.105; MAC Address : 5C:F5:DA:43:6D:A5; User-Agent : CaptiveNetworkSupport-325.10.1 wispr;
+
+***** END OF FILE ***

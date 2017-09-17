@@ -1,0 +1,13 @@
+**** SM_80211_Client_CWAP Report File for Tail N554UA, 2017-04-03 17:30:14, 34.10, -117.23, 355, 96, NA, NA, NA, GATE ***
+**** CWAP 2 ****
+**** ABS Software P15767-RevN-ABS-Bundle_14****
+CwapType, 1
+
+Dot11Radio1: -- Client Traffic --
+Clients:
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+
+***** END OF FILE ***

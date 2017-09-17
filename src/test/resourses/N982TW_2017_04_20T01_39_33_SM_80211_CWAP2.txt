@@ -1,0 +1,74 @@
+**** SM_80211_CWAP Report File for Tail N982TW, 2017-04-20 01:39:33, 37.27, -88.70, 10748, 34834, AAL2430, NA, 02:03 hours, ABOVE_SERVICE_ALTITUDE, ATG_RevA  ***
+**** CWAP 2 ****
+**** ABS Software 6.4.0****
+CwapType, 1
+Dot11Radio0 is up, line protocol is up
+Hardware is 802.11G Radio, address is 0023.343e.dc60 (bia 0023.343e.dc60)
+MTU 1500 bytes, BW 54000 Kbit, DLY 1000 usec,
+reliability 255/255, txload 2/255, rxload 1/255
+Encapsulation 802.1Q Virtual LAN, Vlan ID  1., loopback not set
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:00:00, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 0/75/1/0 (size/max/drops/flushes); Total output drops: 45814
+Queueing strategy: fifo
+Output queue: 0/30 (size/max)
+5 minute input rate 30000 bits/sec, 36 packets/sec
+5 minute output rate 541000 bits/sec, 49 packets/sec
+1296953 packets input, 136420870 bytes, 0 no buffer
+Received 8863 broadcasts, 0 runts, 0 giants, 0 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+0 input packets with dribble condition detected
+1932239 packets output, 2675673485 bytes, 0 underruns
+1682 output errors, 0 collisions, 103 interface resets
+0 babbles, 0 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+Dot11Radio1 is up, line protocol is up
+Hardware is 802.11A Radio, address is 0023.3469.4650 (bia 0023.3469.4650)
+MTU 1500 bytes, BW 54000 Kbit, DLY 1000 usec,
+reliability 255/255, txload 10/255, rxload 1/255
+Encapsulation 802.1Q Virtual LAN, Vlan ID  1., loopback not set
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:00:00, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 51900
+Queueing strategy: fifo
+Output queue: 0/30 (size/max)
+5 minute input rate 105000 bits/sec, 126 packets/sec
+5 minute output rate 2259000 bits/sec, 217 packets/sec
+2585626 packets input, 291615863 bytes, 0 no buffer
+Received 20482 broadcasts, 0 runts, 0 giants, 0 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+0 input packets with dribble condition detected
+3840398 packets output, 1031922713 bytes, 0 underruns
+1969 output errors, 0 collisions, 103 interface resets
+0 babbles, 0 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+FastEthernet0 is up, line protocol is up
+Hardware is PowerPCElvis Ethernet, address is 001d.7098.0850 (bia 001d.7098.0850)
+MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec,
+reliability 255/255, txload 1/255, rxload 7/255
+Encapsulation 802.1Q Virtual LAN, Vlan ID  1., loopback not set
+Full-duplex, 100Mb/s, MII
+ARP type: ARPA, ARP Timeout 04:00:00
+Last input 00:00:00, output 00:00:00, output hang never
+Last clearing of "show interface" counters never
+Input queue: 1/160/0/0 (size/max/drops/flushes); Total output drops: 0
+Queueing strategy: fifo
+Output queue: 0/40 (size/max)
+5 minute input rate 2752000 bits/sec, 260 packets/sec
+5 minute output rate 143000 bits/sec, 157 packets/sec
+5928902 packets input, 3625047268 bytes
+Received 266906 broadcasts, 0 runts, 0 giants, 37 throttles
+0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+0 watchdog
+0 input packets with dribble condition detected
+3766040 packets output, 421099191 bytes, 0 underruns
+0 output errors, 0 collisions, 13 interface resets
+0 babbles, 0 late collision, 0 deferred
+0 lost carrier, 0 no carrier
+0 output buffer failures, 0 output buffers swapped out
+
+***** END OF FILE ***

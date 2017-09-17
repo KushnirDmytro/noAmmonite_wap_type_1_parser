@@ -1,0 +1,152 @@
+**** SM_80211_Client_CWAP Report File for Tail N851VA, 2017-01-08 18:05:30, 43.15, -85.74, 10358, 33095, VRD251, NA, 05:14 hours, ABOVE_SERVICE_ALTITUDE, ATG4  ***
+**** CWAP 1 ****
+**** ABS Software 6.4.0****
+CwapType, 1
+4968
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3626 data retries 3616 rts retries 10
+signal strength 42 signal quality 56
+237-b047.bff0.c202 pak in 17558 bytes in 1704212 pak out 6425 bytes out 7975103
+dup 15 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1493 data retries 1492 rts retries 1
+signal strength 58 signal quality 38
+233-ec9b.f3a0.9da6 pak in 2538 bytes in 292485 pak out 488 bytes out 226472
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 60 data retries 60 rts retries 0
+signal strength 56 signal quality 40
+215-90b6.8672.7ec0 pak in 10334 bytes in 1238703 pak out 2514 bytes out 1244417
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 304 data retries 304 rts retries 0
+signal strength 52 signal quality 44
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+204-b853.aca9.0377 pak in 1587 bytes in 290496 pak out 1117 bytes out 664666
+dup 4 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 217 data retries 191 rts retries 26
+signal strength 57 signal quality 39
+203-0c3e.9f5e.5547 pak in 41 bytes in 2665 pak out 12 bytes out 1583
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 0 data retries 0 rts retries 0
+signal strength 52 signal quality 46
+202-3871.dedb.3701 pak in 317 bytes in 25207 pak out 33 bytes out 12517
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 50 data retries 18 rts retries 32
+signal strength 66 signal quality 32
+201-a4e4.b869.bbdb pak in 1203 bytes in 346818 pak out 1226 bytes out 569464
+dup 1 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 85 data retries 78 rts retries 7
+signal strength 58 signal quality 38
+197-404d.7f6a.4375 pak in 14406 bytes in 1352421 pak out 12614 bytes out 17179339
+dup 3 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1818 data retries 1660 rts retries 158
+signal strength 55 signal quality 43
+196-a4b8.05ce.2dd6 pak in 103 bytes in 4308 pak out 9 bytes out 1074
+dup 1 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 0 data retries 0 rts retries 0
+signal strength 61 signal quality 34
+193-2c33.6126.3d49 pak in 1167 bytes in 64401 pak out 50 bytes out 17715
+dup 1 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 0 data retries 0 rts retries 0
+signal strength 66 signal quality 30
+182-1820.32b6.0a8f pak in 3735 bytes in 288619 pak out 411 bytes out 166391
+dup 19 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 6 data retries 6 rts retries 0
+signal strength 37 signal quality 58
+170-ac5f.3ead.51a1 pak in 6441 bytes in 844123 pak out 2134 bytes out 1893008
+dup 18 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 198 data retries 162 rts retries 36
+signal strength 61 signal quality 38
+162-64b0.a603.069c pak in 1498 bytes in 84680 pak out 67 bytes out 20420
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 6 data retries 6 rts retries 0
+signal strength 56 signal quality 41
+152-9801.a74b.6db8 pak in 8401 bytes in 408619 pak out 114 bytes out 40385
+dup 50 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 4 data retries 4 rts retries 0
+signal strength 52 signal quality 46
+129-cc61.e5d1.2c3f pak in 13232 bytes in 1579641 pak out 11528 bytes out 11587837
+dup 9 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1579 data retries 1284 rts retries 295
+signal strength 63 signal quality 32
+102-b047.bff8.1392 pak in 12083 bytes in 1242848 pak out 5271 bytes out 6468985
+dup 2 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 729 data retries 709 rts retries 20
+signal strength 56 signal quality 41
+62-8489.ad94.8d2e pak in 41650 bytes in 5801841 pak out 20953 bytes out 25267965
+dup 7 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3827 data retries 3382 rts retries 445
+signal strength 62 signal quality 36
+49-2c0e.3d4e.b51e pak in 40647 bytes in 4291091 pak out 60131 bytes out 80864570
+dup 45 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 4604 data retries 4222 rts retries 382
+signal strength 64 signal quality 33
+
+Cisco IOS Software, C1240 Software (C1240-K9W7-M), Version 12.3(8)JEA, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2006 by Cisco Systems, Inc.
+Compiled Wed 23-Aug-06 16:45 by kellythw
+
+ROM: Bootstrap program is C1240 boot loader
+BOOTLDR: C1240 Boot Loader (C1240-BOOT-M) Version 12.4(13d)JA, RELEASE SOFTWARE (fc2)
+
+CWAP1 uptime is 12 hours, 0 minutes
+System returned to ROM by power-on
+System image file is "flash:/c1240-k9w7-mx.123-8.JEA/c1240-k9w7-mx.123-8.JEA"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco AIR-AP1242AG-A-K9    (PowerPCElvis) processor (revision A0) with 24566K/8192K bytes of memory.
+Processor board ID FOC13043A4F
+PowerPCElvis CPU at 266Mhz, revision number 0x0950
+Last reset from power-on
+1 FastEthernet interface
+2 802.11 Radio(s)
+
+32K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 00:23:5E:05:0D:DA
+Part Number                          : 73-9925-07
+PCA Assembly Number                  : 800-26579-06
+PCA Revision Number                  : A0
+PCB Serial Number                    : FOC13043A4F
+Top Assembly Part Number             : 800-29232-02
+Top Assembly Serial Number           : FTX1312B1D6
+Top Revision Number                  : A0
+Product/Model Number                 : AIR-AP1242AG-A-K9
+
+Configuration register is 0xF
+
+
+IP Address : 172.19.131.159; MAC Address : 0C:3E:9F:5E:55:47; User-Agent : Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0 Mobile/14C92 Safari/602.1;
+IP Address : 172.19.131.158; MAC Address : A4:E4:B8:69:BB:DB; User-Agent : Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.2.858 Mobile Safari/537.35+ CPDD;
+IP Address : 172.19.131.151; MAC Address : 2C:0E:3D:4E:B5:1E; User-Agent : Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G935T Build/MMB29M);
+IP Address : 172.19.131.150; MAC Address : 64:B0:A6:03:06:9C; User-Agent : iPhone9,1/10.2 (14C92);
+IP Address : 172.19.131.148; MAC Address : A4:B8:05:CE:2D:D6; User-Agent : iPhone8,1/10.0.1 (14A403);
+IP Address : 172.19.131.147; MAC Address : 84:89:AD:94:8D:2E; User-Agent : iPhone8,2/10.2 (14C92);
+IP Address : 172.19.131.132; MAC Address : CC:61:E5:D1:2C:3F; User-Agent : Dalvik/2.1.0 (Linux; U; Android 7.0; XT1650 Build/NCLS25.86-11-4);
+IP Address : 172.19.131.125; MAC Address : 18:20:32:B6:0A:8F; User-Agent : iPad2,1/9.3.5 (13G36);
+IP Address : 172.19.131.124; MAC Address : 38:71:DE:DB:37:01; User-Agent : iPhone8,1/10.2 (14C92);
+IP Address : 172.19.131.123; MAC Address : 40:4D:7F:6A:43:75; User-Agent : Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A456 Safari/602.1;
+IP Address : 172.19.131.120; MAC Address : AC:5F:3E:AD:51:A1; User-Agent : Sonos;
+IP Address : 172.19.131.117; MAC Address : 2C:33:61:26:3D:49; User-Agent : iPhone9,4/10.2 (14C92);
+IP Address : 172.19.131.171; MAC Address : EC:9B:F3:A0:9D:A6; User-Agent : Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G920T Build/MMB29K);
+IP Address : 172.19.131.168; MAC Address : B8:53:AC:A9:03:77; User-Agent : Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0 Mobile/14C92 Safari/602.1;
+IP Address : 172.19.131.166; MAC Address : 98:01:A7:4B:6D:B8; User-Agent : iPad6,3/10.2 (14C92);
+IP Address : 172.19.131.164; MAC Address : 90:B6:86:72:7E:C0; User-Agent : SM-G920P; 6.0.1; MMB29K.G920PVPS4CPK1; en-us;
+
+***** END OF FILE ***

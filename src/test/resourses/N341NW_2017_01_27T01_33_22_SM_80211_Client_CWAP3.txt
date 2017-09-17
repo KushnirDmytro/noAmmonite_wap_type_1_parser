@@ -1,0 +1,14 @@
+**** SM_80211_Client_CWAP Report File for Tail N341NW, 2017-01-27 01:33:17, 33.62, -84.42, 279, -81, DAL304, NA, 02:27 hours, GATE, ATG4  ***
+**** CWAP 3 ****
+**** ABS Software P15767-RevAF-ABS-Bundle_27****
+CwapType, 1
+ics client-traffic
+
+Dot11Radio1: -- Client Traffic --
+Clients:
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+
+***** END OF FILE ***

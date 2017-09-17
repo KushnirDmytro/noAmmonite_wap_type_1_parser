@@ -1,0 +1,102 @@
+**** SM_80211_Client_CWAP Report File for Tail N376NW, 2016-10-05 12:12:50, 37.48, -86.03, 10539, 33975, DAL2315, NA, 01:05 hours, ABOVE_SERVICE_ALTITUDE, ATG4  ***
+**** CWAP 1 ****
+**** ABS Software 6.4.0****
+CwapType, 1
+Dot11Radio1: -- Client Traffic --
+Clients:
+73-b84f.d52e.bc38 pak in 71 bytes in 5368 pak out 19 bytes out 3895
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 7 data retries 7 rts retries 0
+signal strength 50 signal quality 46
+72-70a2.b3e8.5cfe pak in 855 bytes in 65527 pak out 78 bytes out 30796
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 8 data retries 8 rts retries 0
+signal strength 50 signal quality 45
+68-4843.7c80.aba3 pak in 2300 bytes in 158340 pak out 101 bytes out 41762
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 61 data retries 61 rts retries 0
+signal strength 55 signal quality 39
+66-a4b8.05b4.f7e7 pak in 1615 bytes in 94316 pak out 97 bytes out 28360
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 7 data retries 7 rts retries 0
+signal strength 61 signal quality 34
+63-c0f2.fb40.4666 pak in 3937 bytes in 248006 pak out 221 bytes out 92982
+dup 2 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1 data retries 1 rts retries 0
+signal strength 47 signal quality 49
+61-787e.61cc.3ecb pak in 75 bytes in 2965 pak out 26 bytes out 2418
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1 data retries 1 rts retries 0
+signal strength 55 signal quality 41
+58-a45e.60bd.a35d pak in 988 bytes in 74946 pak out 108 bytes out 30182
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 51 data retries 51 rts retries 0
+signal strength 50 signal quality 45
+57-4485.00a5.d56b pak in 27340 bytes in 4618605 pak out 36969 bytes out 39498514
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 17669 data retries 17634 rts retries 35
+signal strength 56 signal quality 39
+56-3cab.8e46.5302 pak in 5733 bytes in 792867 pak out 3339 bytes out 3410552
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 116 data retries 116 rts retries 0
+signal strength 44 signal quality 51
+54-4030.04b6.4cb2 pak in 4601 bytes in 281309 pak out 302 bytes out 131794
+dup 136 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 205 data retries 179 rts retries 26
+signal strength 72 signal quality 24
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+53-3412.98ec.9341 pak in 249 bytes in 19341 pak out 46 bytes out 19723
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 1 data retries 1 rts retries 0
+signal strength 62 signal quality 37
+52-2c1f.234d.5326 pak in 419 bytes in 78943 pak out 146 bytes out 70984
+dup 1 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3 data retries 3 rts retries 0
+signal strength 46 signal quality 53
+51-1c91.4858.40b8 pak in 3866 bytes in 327591 pak out 6141 bytes out 9211133
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 151 data retries 151 rts retries 0
+signal strength 49 signal quality 48
+44-dc37.1443.5e1d pak in 12202 bytes in 1402108 pak out 11969 bytes out 12904850
+dup 2 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 755 data retries 658 rts retries 97
+signal strength 49 signal quality 48
+38-3848.4ceb.2dcc pak in 9112 bytes in 1169740 pak out 3393 bytes out 1676839
+dup 158 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 163 data retries 119 rts retries 44
+signal strength 59 signal quality 39
+37-b84f.d545.25e4 pak in 739 bytes in 53307 pak out 193 bytes out 61253
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 41 data retries 41 rts retries 0
+signal strength 70 signal quality 23
+33-3402.8607.4ebe pak in 31810 bytes in 3814379 pak out 64085 bytes out 81484484
+dup 105 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 3171 data retries 2973 rts retries 198
+signal strength 50 signal quality 48
+30-4c0b.be03.6970 pak in 581 bytes in 63299 pak out 207 bytes out 49487
+dup 0 decrpyt err 0 mic mismatch 0 mic miss 0
+tx retries 5 data retries 5 rts retries 0
+signal strength 60 signal quality 38
+
+
+IP Address : 172.19.131.152; MAC Address : 40:30:04:B6:4C:B2; User-Agent : iPad2,3/9.3.5 (13G36);
+IP Address : 172.19.131.151; MAC Address : DC:37:14:43:5E:1D; User-Agent : Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403;
+IP Address : 172.19.131.150; MAC Address : 34:02:86:07:4E:BE; User-Agent : Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko;
+IP Address : 172.19.131.165; MAC Address : A4:5E:60:BD:A3:5D; User-Agent : Java/1.6.0_65;
+IP Address : 172.19.131.161; MAC Address : B8:4F:D5:45:25:E4; User-Agent : null;
+IP Address : 172.19.131.160; MAC Address : 48:43:7C:80:AB:A3; User-Agent : iPhone7,2/9.3.5 (13G36);
+IP Address : 172.19.131.149; MAC Address : 44:85:00:A5:D5:6B; User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36;
+IP Address : 172.19.131.148; MAC Address : 34:12:98:EC:93:41; User-Agent : iPhone7,2/9.2.1 (13D15);
+IP Address : 172.19.131.147; MAC Address : 38:48:4C:EB:2D:CC; User-Agent : WSJ/20149 CFNetwork/758.5.3 Darwin/15.6.0;
+IP Address : 172.19.131.178; MAC Address : 78:7E:61:CC:3E:CB; User-Agent : iPad5,3/9.3.5 (13G36);
+IP Address : 172.19.131.177; MAC Address : 3C:AB:8E:46:53:02; User-Agent : Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13F69 Safari/601.1;
+IP Address : 172.19.131.145; MAC Address : C0:F2:FB:40:46:66; User-Agent : iPad4,8/9.3.5 (13G36);
+IP Address : 172.19.131.175; MAC Address : 2C:1F:23:4D:53:26; User-Agent : Mozilla/5.0 (iPad; CPU OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403;
+IP Address : 172.19.131.143; MAC Address : 1C:91:48:58:40:B8; User-Agent : iPhone8,1/9.3.2 (13F69);
+IP Address : 172.19.131.174; MAC Address : 70:A2:B3:E8:5C:FE; User-Agent : iPad5,4/10.0.2 (14A456);
+IP Address : 172.19.131.158; MAC Address : A4:B8:05:B4:F7:E7; User-Agent : iPhone8,1/10.0.2 (14A456);
+
+***** END OF FILE ***

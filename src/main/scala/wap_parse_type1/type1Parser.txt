@@ -1,0 +1,249 @@
+
+// Paradise macros needed for Circe's @JsonCodec annotation
+
+// imports related to JSON encoding
+import java.io.FileWriter
+import java.nio.file.Path
+
+import io.circe._
+import io.circe.syntax._
+import io.circe.generic.JsonCodec
+import io.circe.generic.auto._
+import io.circe.generic.semiauto._
+
+// imports provided by Ammonite
+//import ammonite.ops._, ImplicitWd._
+import fastparse.all._
+
+// imports provided by Scala
+import java.time.LocalDateTime
+import scala.concurrent.duration._
+import scala.io.Source
+import System.nanoTime
+import scala.util.matching.Regex
+
+import scala.sys.process._
+
+
+import wap_parse_type1.parserUtils._
+import wap_parse_type1.clientParser.{ClientCWAPInterface, ClientCWAPAssociation, cwapClientFileBody}
+import wap_parse_type1.headerParser.{summaryInterface}
+
+import scala.io.Source
+
+import java.nio.charset.StandardCharsets._
+import java.nio.file.{Files, Paths}
+
+
+sealed trait ParseReport
+
+case class ParseSuccess(
+  scriptNameRev: String,
+  now: String,
+  inputPath: String,
+  bytesRead: Int,
+  bytesParsed: Int,
+  durationRead: Double,
+  durationParse: Double,
+  durationWrite: Double,
+  durationTotal:Double
+) extends ParseReport
+
+case class ParseFailure(
+  scriptNameRev: String,
+  now: String,
+  inputPath: String,
+  bytesRead: Int,
+  bytesParsed: Int,
+  durationRead: Double,
+  durationParse: Double,
+  expected: String,
+  trace: String,
+  durationTotal: Double
+) extends ParseReport
+
+
+    implicit val parseReportEncoder: Encoder[ParseReport] = deriveEncoder
+
+    sealed trait ParseResult
+
+    @JsonCodec case class ClientCWAP(
+                                      fileHeader: CWAPFileHeader,
+                                      cwapType: Int,
+                                      interfaces: Seq[ClientCWAPInterface],
+                                      associationTable: Seq[ClientCWAPAssociation]
+                                    ) extends ParseResult
+
+
+    @JsonCodec case class SummaryCWAP(
+                                       fileHeader: CWAPFileHeader,
+                                       cwapType: Int,
+                                       interfaces: Option[Seq[Map[String, String]]]
+                                     ) extends ParseResult
+
+    implicit val parseResultEncoder: Encoder[ParseResult] = deriveEncoder
+    val circeJsonPrinter: io.circe.Printer = Printer.noSpaces.copy(preserveOrder = true)
+
+
+    val cwapClientFile = P((
+      fileHeader ~
+        cwapType ~
+        (!cwapClientFileBody ~ CharsWhile(_ != '\n')).rep(sep = "\n".rep) ~
+        "\n".rep ~ cwapClientFileBody.?
+      ).map({
+      case (fileHeader, cwapType, Some((Some(interfaces), Some(associationTable))))
+      => ClientCWAP(fileHeader, cwapType.toInt, interfaces, associationTable)
+      case (fileHeader, cwapType, None)
+      => ClientCWAP(fileHeader, cwapType.toInt, Seq[ClientCWAPInterface](), Seq[ClientCWAPAssociation]())
+    }))
+
+
+    val notSummaryInterface = P((!summaryInterface ~ CharsWhile(_ != '\n')).rep(sep = "\n".rep) | "\n".rep)
+
+    val cwapSummaryFile = P((
+      fileHeader ~
+        cwapType ~
+        notSummaryInterface ~
+        "\n".rep ~ summaryInterface.rep(sep = notSummaryInterface).? // ~
+      // (!eof ~ CharsWhile( _ != '\n')).rep( sep = "\n".rep) ~
+      // eof
+      )
+      .map({
+        case ((fileHeader, cwapType, interfaces))
+        => SummaryCWAP(fileHeader, cwapType.toInt, interfaces)
+        case ((fileHeader, cwapType, None))
+        => SummaryCWAP(fileHeader, cwapType.toInt, None)
+      }))
+
+    // val cwapSummaryFile = P((
+    //   fileHeader ~
+    //   cwapType ~
+    //   summaryInterface.rep( sep="\n".rep).? ~
+    //   eof)
+    //   .map( {
+    //     case ((fileHeader, cwapType, interfaces))
+    //       => SummaryCWAP(fileHeader, cwapType.toInt, interfaces)
+    //     case ((fileHeader, cwapType, None))
+    //       => SummaryCWAP(fileHeader, cwapType.toInt, None)
+    //   }))
+
+
+    def toMillis(d: FiniteDuration): Double = {
+      Math.round(d.toUnit(MILLISECONDS) * 1000.0) / 1000.0
+    }
+
+
+    //@doc("Read a list of absolute paths from stdin and write JSON lines to a file named cwapParser-${rev}-{$suffix}.json")
+    //@main
+    def main(
+               rev: String,
+                 //@doc(
+                // "used to indicate which revision of the script generated the data; " +
+                 //  "usually '$(git rev-parse --short HEAD)' to get the short SHA1 hash of the most recent Git commit"),
+               suffix: String
+                //@doc(
+                 //"used to indicate which subset of data was processed; " +
+                 //  "usually yyyy-mm like '2017-04' to indicate a specific month")
+             ) = {
+      require( rev != None , "rev absent case") //this is for correct input
+      require( suffix!= None , "suffix absent case" )
+      val outputFile = s"cwapParser-${rev}-${suffix}-out.json"
+      "rm  'pwd / outputFile'".!
+      val scriptNameRev = "cwapParser.sc:" + rev
+      Source.stdin.getLines.foreach(inputPath => parseResultWithReport(inputPath, outputFile, scriptNameRev))
+    }
+
+
+  def time [R](block : => R) : (R, _) ={
+    val t0 = System.nanoTime()
+    val result = block
+    val t1 = System.nanoTime()
+    (result, t1-t0)
+  }
+
+    def parseResultWithReport(
+                               inputPath: String,
+                               outputFile: String,
+                               scriptNameRev: String
+                             ): (Parsed[ParseResult], ParseReport) = {
+      val clientRegexp: Regex = """(?i).*client.*""".r
+
+      val logPath = Paths.get(inputPath)
+
+
+ //     println("got log path as " + logPath );
+      val now = LocalDateTime.now().toString
+
+      val (parseProfile, durationTotal) = time {
+        val (inputString:String, durationRead) = time {
+
+
+          new String(Files.readAllBytes(logPath), UTF_8)
+
+//          Source.fromFile(logPath.getAbsoluteFile).mkString
+//          "read ! logPath | export &logPath"
+        }
+
+        println("FILE READING RESULT" + inputString)
+        val (parseResult, durationParse) = time {
+          val result: Parsed[ParseResult] = inputPath match {
+            case clientRegexp() => cwapClientFile.parse(inputString)
+            case _ => cwapSummaryFile.parse(inputString)
+          }
+          result
+        }
+
+
+        val currentDirectory = new java.io.File(".").getAbsolutePath
+
+
+        val durationWrite: Option[FiniteDuration] = parseResult match {
+          case Parsed.Success(parseResult: ParseResult, _) => {
+            val (_, durationWrite) = time {
+
+
+              // maybe time gap because of operational wastes
+
+              val fw:FileWriter  = new FileWriter( currentDirectory + "/" +  outputFile, true)
+                fw.write(
+                circeJsonPrinter.pretty(
+                  parseResult.asJson.deepMerge(Json.obj("fileName" -> logPath.getFileName.asJson)))
+                  + "\n")
+              fw.close()
+
+            }
+            Some(durationWrite)
+          }
+          case Parsed.Failure(_, _, _) => None
+        }
+
+        (durationRead, inputString.length, durationParse, parseResult, durationWrite)
+      }
+
+      val parseReport: ParseReport =
+        parseProfile match {
+          case (
+            durationRead, bytesRead, durationParse,
+            Parsed.Success(_, bytesParsed),
+            Some(durationWrite)
+            ) =>
+            ParseSuccess(
+              scriptNameRev, now, inputPath, bytesRead, bytesParsed,
+              toMillis(durationRead), toMillis(durationParse),
+              toMillis(durationWrite),
+              toMillis(durationTotal))
+          case (durationRead, bytesRead, durationParse,
+          Parsed.Failure(expected, bytesParsed, extra),
+          None
+            ) =>
+            ParseFailure(
+              scriptNameRev, now, inputPath, bytesRead, bytesParsed,
+              toMillis(durationRead), toMillis(durationParse),
+              expected.toString, extra.traced.trace,
+              toMillis(durationTotal))
+        }
+
+      println(circeJsonPrinter.pretty(parseReport.asJson))
+      (parseProfile._4, parseReport)
+    }
+

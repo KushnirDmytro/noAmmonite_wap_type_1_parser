@@ -1,0 +1,62 @@
+**** SM_80211_Client_CWAP Report File for Tail N964TW, 2017-01-22 11:55:36, 0.00, 0.00, 20000, 65617, NA, NA, NA, ABOVE_SERVICE_ALTITUDE, ATG_RevA  ***
+**** CWAP 2 ****
+**** ABS Software P15767-RevAF-ABS-Bundle_27****
+CwapType, 1
+client-traffic
+
+Dot11Radio1: -- Client Traffic --
+Clients:
+
+
+Dot11Radio0: -- Client Traffic --
+Clients:
+
+Cisco IOS Software, C1240 Software (C1240-K9W7-M), Version 12.3(8)JEA, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2006 by Cisco Systems, Inc.
+Compiled Wed 23-Aug-06 16:45 by kellythw
+
+ROM: Bootstrap program is C1240 boot loader
+BOOTLDR: C1240 Boot Loader (C1240-BOOT-M) Version 12.4(13d)JA, RELEASE SOFTWARE (fc2)
+
+CWAP1 uptime is 1 day, 0 minutes
+System returned to ROM by power-on
+System image file is "flash:/c1240-k9w7-mx.123-8.JEA/c1240-k9w7-mx.123-8.JEA"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco AIR-AP1242AG-A-K9    (PowerPCElvis) processor (revision A0) with 24566K/8192K bytes of memory.
+Processor board ID FOC16420QLG
+PowerPCElvis CPU at 266Mhz, revision number 0x0950
+Last reset from power-on
+1 FastEthernet interface
+2 802.11 Radio(s)
+
+32K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 6C:20:56:E8:ED:30
+Part Number                          : 73-13785-01
+PCA Assembly Number                  : 800-37050-01
+PCA Revision Number                  : A0
+PCB Serial Number                    : FOC16420QLG
+Top Assembly Part Number             : 800-29232-02
+Top Assembly Serial Number           : FTX1646B0KL
+Top Revision Number                  : A0
+Product/Model Number                 : AIR-AP1242AG-A-K9
+
+Configuration register is 0xF
+
+***** END OF FILE ***

@@ -1,0 +1,6 @@
+**** SM_80211_Client_CWAP Report File for Tail N376NW, 2016-10-05 12:12:50, 37.48, -86.03, 10539, 33975, DAL2315, NA, 01:05 hours, ABOVE_SERVICE_ALTITUDE, ATG4  ***
+**** CWAP 1 ****
+**** ABS Software 6.4.0****
+CwapType, 1
+
+***** END OF FILE ***
